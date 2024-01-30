@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/styles/home.css">
+    <link rel="stylesheet" href="../public/styles/ui.css">
+</head>
+<body>
+
+    <div class=" d-flex flex-column ">
+        <header class="d-flex justify-content-center align-items-center">
+            <div class="container header-text  d-flex justify-content-center align-items-center " >
+                <h2>Playing</h2> > > >
+            </div>
+            <div class="timing" >
+                Game starts at : <input name="" id="timing" value="5 sec"></input>
+            </div>
+            <button class="btn btn-success" id="playButton">Play Now!</button>
+            <div class="buttons" width="100px">
+                
+                <button class="close-button col-1 d-flex justify-content-center align-items-center cross"></button>
+                <div class="dropdown">
+                    <button class="hamburger col-1 d-flex justify-content-center align-items-center" onclick="toggleDropdown()"> > </button>
+                    <div class="dropdown-content d-inline-block" id="dropdownContent">
+                        <!-- Dropdown links with href -->
+                        <a href="#link1">Link 1</a>
+                        <a href="#link2">Link 2</a>
+                        <a href="#link3">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="gaming-window d-flex flex-row">
+                <div class="gaming-console d-flex gap0  flex-column justify-content-start align-items-start">
+                    <!-- <p class=" texting ui"> </p> -->
+                    <div class="component gap0 d-flex">
+                        <input name="" type="text" class="pr-0" value="" disabled="true" id="textT"></input>
+                        <input name="" type="text" class="pl-0" disabled="true" value="" id="text"></input>
+                    </div>
+                    <input name="" value="" type="text" id="text2" placeholder="Type here" disabled="true" style="
+                    border: 1px; outline: 1px;"></input>
+                </div>
+
+                <!-- Analysis -->
+                
+                <div class="gaming-analysis d-flex justify-content-center align-items-center">
+                    <!-- <p class="dancing">Analysis</p> -->
+                    <div class="analysis d-flex flex-column align-items-start justify-content-start">
+                        <div class="report">
+                            <h3>Your Analysis Report:</h3>
+                        </div>
+                        <div class="contents">
+                            <div class="info words" id="noOfWords">No of words : <input type="text" value=""> 00 words</div>
+                        <div class="info totalTime" id="timeTaken">Total time taken: <input type="text" value=""> 00 sec</div>
+                        <div class="info" id="wpm" >Words per minute count (wpm) : <input type="text" value="5" style="background-color: transparent; border: none; outline: none; width: 5px" disabled="true">0</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="salutation" id="salutation"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/api.js"></script>
+</body>
+</html>

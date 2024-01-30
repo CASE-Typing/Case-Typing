@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+*{
+    margin:auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Salsa', cursive;
+}
+
+:root {
+    --main-color: #3498db;
+    --bg-color: white; 
+    --font-size: 16px;  
+    --font-color: white;  
+    --section: #3498db;
+    --header: #081823;
+  }
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: var(--bg-color);
+    /* background-image: url('../img/game.webp'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; */
+}
+
+section{
+    background-color: var(--section);
+    width: 85vw;
+}
+header , footer{
+    background-color: var(--header);
+    /* box-shadow: 0 16px 16px 0 black; */
+    width: 100vw;
+}
+
+header{
+    color: var(--font-color) !important;
+}
+.navbar{
+    font-weight: bolder;
+}
+
+/* Add this CSS to your existing styles or your external stylesheet */
+
+/* Style for the underline */
+.options::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    color: white;
+    background-color: #3498db; /* Set the desired underline color */
+    transition: width 0.3s ease; /* Set the transition duration and easing function */
+  }
+  
+  /* Adjust the padding and positioning for better visual appearance */
+  .options {
+    position: relative;
+    color: white;
+    padding-bottom: 5px;
+  }
+  
+  /* Change the width of the underline when hovered */
+  .options:hover::before {
+    width: 100%;
+    color: white;
+    color: var(--main-color);
+  }
+  
+header, section{
+    width: 80%;
+    background-color: #2eb7be;
+    border-left:2px solid #05161a;
+    border-right:2px solid #05161a;
+}
+
+header, section{
+    border-bottom: 1px solid black;
+}
+
+.header-bg{
+    background-color: #05161a;
+}
+
+.options:hover{
+    cursor: pointer;
+    text-decoration:  2px underline;
+    transition: all 0.3 ease;
+    color: aquamarine;
+}
+
+.give-font{
+    color: aquamarine;
+    font-size: 1.1em;
+}
+
+.options{
+    color: aqua;
+    font-size: 1.1em;
+}
+
+.get-color{
+    color: #05161a;
+}
+
+.home{
+    background-color: #072e33;
+    color: aqua;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    border-radius: 2.5px;
+}
+
+.home:hover{
+    background-color: #094b5c;
+    color: aquamarine;
+}
+
+.play{
+    width: 130px;
+    height: 60px;
+    background: transparent ;
+    border: 2px solid margin;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    color: whitesmoke;
+    font-weight: 500;
+    margin-left: 40px;
+    border: 2px solid #05161a;
+}
+
+.play:hover{
+    transition: .3s;
+    color: #05161a;
+}
+
+.image{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.feature-text{
+    justify-content: center;
+    font-size: 50px;
+    color: #05161a;
+}
+
+.feature-learn:hover{
+    cursor: pointer;
+    transform: scale(2.1);
+}
+
+/*.feature-bg{
+    /* background-image: url("");
+    /* background-color: #0c7073;
+}
+
+.emails{
+    justify-content: center;
+    display: flex;
+    color: aliceblue;
+}
+
+.email:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #05161a;
+}
+
+.contact-bg{
+    background-color: #05161a;
+}*/

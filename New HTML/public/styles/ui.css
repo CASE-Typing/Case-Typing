@@ -1,0 +1,337 @@
+header{
+    height: 10vh;
+    border: 0 8px 16px 8px white;
+    background-color: black;
+    animation: glow 3s infinite alternate;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bolder;
+}
+
+h2,h3{
+  animation: glow-text 3s infinite alternate;
+}
+
+.header-text{
+    animation: text-animation 1s infinite alternate;
+}
+
+/* Reset some default styles to ensure consistency across browsers */
+html {
+    font-size: 16px;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  section{
+    background-color: black;
+  }
+  .d-flex {
+    display: flex;
+    gap: 3rem;
+  }
+  .dancing {
+    animation: slideFromRightToLeft 5s ease-in-out infinite;
+  }
+
+  /* #text{
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+    border: none;
+    outline: none;
+  }
+  #text2{
+    width: 100%;
+    height: 50%;
+    padding:2rem;
+  } */
+.pl-0{
+  padding-left: 0% !important;
+}
+.pr-0 {
+  padding-right: 0% !important;
+  text-align: right;
+}
+#text,#textT,
+#text2 {
+    display: block; /* or display: inline-block; */
+    width: 100%;
+    padding: 2rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: 1rem; /* Add margin to create space between input elements */
+}
+
+textarea{
+  resize: none;
+}
+  .gap0{
+    gap: 0 !important;
+  }
+
+  @keyframes slideFromRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .gaming-console {
+    height: 30rem;
+    width: 50vw;
+    background-color: whitesmoke;
+    animation: glow-console 9s infinite alternate;  
+    color: black;
+  }
+  .word-animation {
+    display: inline-block;
+    white-space: nowrap; /* Prevents line breaks within the text */
+    overflow: hidden;
+  }
+  
+  .word-animation:before {
+    content: " "; /* Ensures that the initial content is visible initially */
+    display: inline-block;
+    width: 100%; /* Ensures the width is the same as the parent container */
+    animation: slideWords 9s infinite alternate;
+  }
+  
+  /* @keyframes slideWords {
+    0%, 100% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+  }
+@keyframes slideWords {
+  0%, 100% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+} */
+
+  .gaming-window{
+    gap: 3rem;
+  }
+/* .dancing{
+    animation : bounce 2s infinite ;
+} */
+  .gaming-analysis{
+    animation: glow-analysis 12s infinite alternate;
+    height: 30rem;
+    width: 30vw;
+    color: white;
+    background-color: transparent;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(255, 0, 0, 0.8); /* Red glow */
+      color: rgba(255, 0, 0, 0.8); /* Red glow */
+    }
+    25% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(0, 255, 0, 0.8); /* Green glow */
+      color: rgba(0, 255, 0, 0.8); /* Green glow */
+    }
+    50% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(0, 0, 255, 0.8); /* Blue glow */
+      color:  rgba(0, 0, 255, 0.8); /* Blue glow */
+    }
+    75% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(255, 255, 0, 0.8); /* Yellow glow */
+      color:  rgba(255, 255, 0, 0.8); /* Yellow glow */
+    }
+    100% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(255, 0, 255, 0.8); /* Purple glow */
+      color:  rgba(255, 0, 255, 0.8); /* Purple glow */
+    }
+  }
+  @keyframes glow-text {
+    0% {
+      color: rgba(255, 0, 0, 0.8); /* Red glow */
+    }
+    25% {
+      color: rgba(0, 255, 0, 0.8); /* Green glow */
+    }
+    50% {
+      color:  rgba(0, 0, 255, 0.8); /* Blue glow */
+    }
+    75% {
+      color:  rgba(255, 255, 0, 0.8); /* Yellow glow */
+    }
+    100% {
+      color:  rgba(255, 0, 255, 0.8); /* Purple glow */
+    }
+  }
+
+  @keyframes glow-console {
+    0% {
+      box-shadow: 0 0 1.25rem 0.725rem rgba(255, 105, 180, 0.8); /* Bright Pink glow */
+    }
+    25% {
+      box-shadow: 0 0 1.25rem 0.725rem rgba(128, 0, 128, 0.8); /* Purple glow */
+    }
+    50% {
+      box-shadow: 0 0 1.25rem 0.725rem rgba(255, 105, 180, 0.8); /* Bright Pink glow */
+    }
+    75% {
+      box-shadow: 0 0 1.25rem 0.725rem rgba(128, 0, 128, 0.8); /* Purple glow */
+    }
+    100% {
+      box-shadow: 0 0 1.25rem 0.725rem rgba(255, 105, 180, 0.8); /* Bright Pink glow */
+    }
+  }
+
+  @keyframes glow-analysis {
+    0% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(255, 105, 180, 0.8); /* Bright Pink glow */
+    }
+    25% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(255, 255, 0, 0.8); /* Yellow glow */
+    }
+    50% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(0, 128, 0, 0.8); /* Green glow */
+    }
+    75% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(255, 255, 0, 0.8); /* Yellow glow */
+    }
+    100% {
+      box-shadow: 0 0 1.25rem 0.625rem rgba(255, 105, 180, 0.8); /* Bright Pink glow */
+    }
+  }
+  
+  /* @keyframes text-animation {
+    0% {
+      font-size: 2.5rem;
+    }
+    25% {
+      font-size: 2rem;
+    }
+    50% {
+      font-size: medium;
+    }
+    75% {
+      font-size: 2rem;
+    }
+    100% {
+      font-size: 2.5rem;
+    }
+  } */
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* Bounce at the top position */
+    }
+    40% {
+      transform: translateY(-20px); /* Bounce at a lower position */
+    }
+    60% {
+      transform: translateY(-10px); /* Bounce at a mid position */
+    }
+  }
+  
+  
+  .close-button {
+    width: 30px;
+    height: 30px;
+    background-color: #ff5f5f; /* Red color */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 1.25rem 0.625rem rgba(255, 0, 0, 1);
+    transition: transform 0.3s ease;
+}
+
+.close-button::before,
+.close-button::after {
+    content: "";
+    position: absolute;
+    background-color: #fff; /* White color */
+    width: 3px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close-button:hover{
+    transform: rotate(90deg);
+}
+.close-button::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-button::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 35rem;
+}
+.hamburger{
+    color: black;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    /* font-size: 2rem; */
+}
+
+.hamburger {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .hamburger:hover {
+    transform: rotate(90deg);
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color); /* Red color */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 1.25rem 0.625rem #3498db;
+    font-size: larger;
+    color: white;
+    font-weight:bolder;
+}
+
+.hamburger::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.info input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 5px;
+}
+
+.timing input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.salutation{
+  color: white;
+}

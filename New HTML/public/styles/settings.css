@@ -1,0 +1,114 @@
+*{
+    margin:auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins', 'sans-serif';
+}
+
+body{
+    justify-content: center; 
+    background:#dedddd;
+}
+
+header, section{
+    width: 80%;
+    background-color: #2eb7be;
+    border-left:2px solid #05161a;
+    border-right:2px solid #05161a;
+}
+
+header, section{
+    border-bottom: 1px solid black;
+}
+
+.header-bg{
+    background-color: #05161a;
+}
+
+.options:hover{
+    cursor: pointer;
+    text-decoration:  2px underline;
+    transition: all 0.3 ease;
+    color: aquamarine;
+}
+
+.give-font{
+    color: aqua;
+    font-size: 1.1em;
+}
+
+.options{
+    color: aqua;
+    font-size: 1.1em;
+}
+
+.get-color{
+    color: #05161a;
+}
+
+
+.home{
+    background-color: #072e33;
+    color: aqua;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    border-radius: 2.5px;
+}
+
+.home:hover{
+    background-color: #094b5c;
+    color: aquamarine;
+}
+
+.play{
+    width: 130px;
+    height: 60px;
+    background: transparent ;
+    border: 2px solid margin;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    color: #05161a;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .3s;
+    border: 2px solid #05161a;
+}
+
+/* .bold-txt{
+    color: transparent;
+} */
+
+.bold-txt:hover{
+    background-color: #05161a29;
+    color: #05161a;
+}
+
+.get-background1{
+    background-image: url("https://source.unsplash.com/720x600/?typing");
+    background-size:cover;
+}
+.get-background2{
+    background-image: url("https://source.unsplash.com/720x600/?type");
+    background-size:cover;
+}
+.get-background3{
+    background-image: url("https://source.unsplash.com/720x600/?book");
+    background-size:cover;
+}
+.get-background4{
+    /* background-image: url("https://source.unsplash.com/720x600/?earphone,headphone"); */
+    background-image: url(bg-option-4.jpg);
+    background-size:cover;
+}
+
+ .option-image:hover, h2:hover{
+    opacity: 0.8;
+    font-size: larger;
+    color: #ffffff;
+    border: 1px solid black;
+} 
